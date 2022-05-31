@@ -1,0 +1,44 @@
+/*::ng-deep body{
+    background-color: #2b475e;
+}*/
+
+.btn-square:hover{
+    
+    background-color: rgb(17, 255, 17);
+}
+.btn-squaree:hover{
+    
+    background-color: rgb(255, 53, 17);
+}
+.container-fluid{
+    background-color: #2b475e;
+}
+
+#img-bg{
+        background-image: url("https://i.imgur.com/PFBSxre.jpg");
+        min-height: 695px;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+    
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-bottom: 0%;
+}
+.cor{
+    background-color: #FFD43D;
+}
+.core{
+    background-color: #FFD43D;
+}
+button{
+    margin-top:30px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
