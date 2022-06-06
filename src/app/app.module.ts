@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,6 +9,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { EntrarComponent } from './entrar/entrar.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { EntrarComponent } from './entrar/entrar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
