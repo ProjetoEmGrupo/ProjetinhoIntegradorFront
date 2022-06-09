@@ -34,6 +34,7 @@
 .btn{
     margin-left: 5rem;
     padding: 20px;
+    margin-bottom: 5px;
     font-size: 25px;
     font-weight: bold;
     border-radius: 25px;
@@ -41,7 +42,7 @@
 }
 
 .btn:hover{
-    background-color: darkgray;
+    background-color:cadetblue;
 }
 
 
