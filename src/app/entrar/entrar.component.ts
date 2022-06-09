@@ -10,27 +10,27 @@ import { AuthService } from '../service/auth.service';
 })
 export class EntrarComponent implements OnInit {
 
-  userLogin:UsuarioLogin = new UsuarioLogin()
+  userLogin: UsuarioLogin = new UsuarioLogin()
   constructor(
-    private auth:AuthService,
-    private router:Router
+    private auth: AuthService,
+    private router: Router
   ) { }
 
-  ngOnInit(){
-    window.scroll(0,0)
+  ngOnInit() {
+    window.scroll(0, 0)
   }
-entrar(){
+  entrar() {
 
-  this.auth.entrar(this.userLogin).subscribe({
-    next:(resp:UsuarioLogin)=>{
-    this.userLogin=resp
-    this.router.navigate(['/inicio'])
-  },
-  error:erro=>{
-    if(erro.status==500){
-      alert('Senha ou usuario INVALIDOS!')
-    }
-  },
- }); 
-}
+    this.auth.entrar(this.userLogin).subscribe({
+      next: (resp: UsuarioLogin) => {
+        this.userLogin = resp
+        this.router.navigate(["/inicio"])
+        alert('Bem vindo(a)!')
+      }, error: erro => {
+        if (erro.status == 500 || erro.status == 401) {
+          alert('ERRO! Usuário ou senha inválidos!')
+        }
+      },
+    });
+  }
 }
