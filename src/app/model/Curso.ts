@@ -1,5 +1,5 @@
 import { Categoria } from "./Categoria"
-import { Usuario } from "./Usuario"
+import { User } from "./User"
 
 export class Curso{
     public id: number
@@ -7,7 +7,7 @@ export class Curso{
     public professor: string
     public qtvagas:string
     public duracao:string
-    public usuario:Usuario
+    public usuario:User
     public categoria: Categoria
 
 }

@@ -10,6 +10,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { FormsModule } from '@angular/forms';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     RodapeComponent,
 
     CadastrarComponent,
-     EntrarComponent
+     EntrarComponent,
+     InicioComponent
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@ export class UsuarioLogin{
     public pronome: string
     public foto: string
     public celular:string
-    public endereco:string
-    public token:string
     public tipo:string
+    public token:string
+    
 }

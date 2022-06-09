@@ -1,10 +1,11 @@
 import { Curso } from "./Curso"
-import { Usuario } from "./Usuario"
+import { User} from "./User"
 
 export class Categoria{
     public id:number
     public modelo:string
     public categoria:string
     public curso:Curso
-    public usuario:Usuario
+    public usuario:User
+    
 }

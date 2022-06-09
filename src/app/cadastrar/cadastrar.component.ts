@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Usuario } from '../model/Usuario';
+import { User } from '../model/User';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['./cadastrar.component.css']
 })
 export class CadastrarComponent implements OnInit {
-  usuario:Usuario = new Usuario
+  user:User = new User
   confirmarSenha:string
   tipoUsuario:string
   pronome:string
@@ -33,12 +33,12 @@ export class CadastrarComponent implements OnInit {
     this.pronome=event.target.value
   }
   cadastrar(){
-    this.usuario.tipo=this.tipoUsuario
-    if(this.usuario.senha != this.confirmarSenha){
+    this.user.tipo= this.tipoUsuario
+    if(this.user.senha != this.confirmarSenha){
       alert('as senhas estão incorretas!')
     }else{
-      this.auth.cadastrar(this.usuario).subscribe((resp:Usuario)=>{
-        this.usuario= resp
+      this.auth.cadastrar(this.user).subscribe((resp:User)=>{
+        this.user= resp
         this.router.navigate(['/entrar'])
         alert('usuario cadastrado!!')
       })
