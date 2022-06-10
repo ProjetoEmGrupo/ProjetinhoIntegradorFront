@@ -6,30 +6,30 @@
         </button>
         <a class="navbar-brand" href="#"><img src="" alt="" height="60px"></a>
             <a class="tra" href="">
-                <p class="text-white m-0 fs">Sair <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <p class=" m-0 fs fp">Sair <i class="fa fa-sign-out" aria-hidden="true"></i>
                 </p>
         </a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        <div class="offcanvas offcanvas-start bg" tabindex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Educa++</h5>
+                <h5 class="offcanvas-title fw-bold fn" id="offcanvasNavbarLabel">Educa++</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active bf fw-bold" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cursos</a>
+                        <a routerLink="/cursos" class="nav-link bf fw-bold" data-bs-dismiss="offcanvas">Cursos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre nós</a>
+                        <a class="nav-link bf fw-bold" href="#" data-bs-dismiss="offcanvas">Sobre nós</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex mt-5" role="search">
                     <input class="form-control me-2" type="Pesquisa" placeholder="Pesquisar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="btn " type="submit">Buscar</button>
                 </form>
             </div>
         </div>
