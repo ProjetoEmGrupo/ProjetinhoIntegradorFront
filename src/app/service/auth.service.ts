@@ -25,6 +25,7 @@ export class AuthService {
     if(environment.token != ''){
       ok=true
     }
+    console.log(environment.token)
     return ok
   }
 }

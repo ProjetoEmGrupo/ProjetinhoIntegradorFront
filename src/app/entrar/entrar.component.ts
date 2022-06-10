@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
 import { UsuarioLogin } from '../model/UsuarioLogin';
 import { AuthService } from '../service/auth.service';
 
@@ -24,6 +25,10 @@ export class EntrarComponent implements OnInit {
     this.auth.entrar(this.userLogin).subscribe({
       next: (resp: UsuarioLogin) => {
         this.userLogin = resp
+        environment.foto = this.userLogin.foto
+        environment.id = this.userLogin.id
+        environment.nome = this.userLogin.nome
+        environment.token = this.userLogin.token
         this.router.navigate(["/inicio"])
         alert('Bem vindo(a)!')
       }, error: erro => {
