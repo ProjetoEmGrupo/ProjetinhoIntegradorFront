@@ -11,6 +11,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
+import { CategoriasComponent } from './categorias/categorias.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { InicioComponent } from './inicio/inicio.component';
 
     CadastrarComponent,
      EntrarComponent,
-     InicioComponent
+     InicioComponent,
+     CategoriasComponent
   ],
   imports: [
     BrowserModule,
