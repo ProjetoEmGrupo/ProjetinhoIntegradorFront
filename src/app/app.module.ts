@@ -11,6 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { CategoriasComponent } from './categorias/categorias.component';
+import { ParceirosComponent } from './parceiros/parceiros.component';
+import { CadastraUserComponent } from './cadastra-user/cadastra-user.component';
+import { CadastraCursoComponent } from './cadastra-curso/cadastra-curso.component';
 
 
 
@@ -25,7 +28,10 @@ import { CategoriasComponent } from './categorias/categorias.component';
      EntrarComponent,
      InicioComponent,
      CursosComponent,
-     CategoriasComponent
+     CategoriasComponent,
+     ParceirosComponent,
+     CadastraUserComponent,
+     CadastraCursoComponent
   ],
   imports: [
     BrowserModule,
