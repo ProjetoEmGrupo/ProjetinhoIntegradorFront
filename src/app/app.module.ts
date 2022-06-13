@@ -12,7 +12,6 @@ import { InicioComponent } from './inicio/inicio.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { CategoriasComponent } from './categorias/categorias.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
-import { CadastraUserComponent } from './cadastra-user/cadastra-user.component';
 import { CadastraCursoComponent } from './cadastra-curso/cadastra-curso.component';
 
 
@@ -30,7 +29,6 @@ import { CadastraCursoComponent } from './cadastra-curso/cadastra-curso.componen
      CursosComponent,
      CategoriasComponent,
      ParceirosComponent,
-     CadastraUserComponent,
      CadastraCursoComponent
   ],
   imports: [
