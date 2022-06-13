@@ -13,6 +13,7 @@ import { CursosComponent } from './cursos/cursos.component';
 import { CategoriasComponent } from './categorias/categorias.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { CadastraCursoComponent } from './cadastra-curso/cadastra-curso.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 
 
@@ -29,7 +30,8 @@ import { CadastraCursoComponent } from './cadastra-curso/cadastra-curso.componen
      CursosComponent,
      CategoriasComponent,
      ParceirosComponent,
-     CadastraCursoComponent
+     CadastraCursoComponent,
+     UsuarioComponent
   ],
   imports: [
     BrowserModule,

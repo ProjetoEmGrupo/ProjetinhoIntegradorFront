@@ -1,0 +1,16 @@
+.margem{
+ 
+    margin-top: 10%;
+}
+::ng-deep body{
+    background-color: #2b475e;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffd43d;
+}
