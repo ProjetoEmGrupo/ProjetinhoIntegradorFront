@@ -1,11 +1,61 @@
 <div class="container-fluid margem">
 <div class="row ">
  <div class="col-md-6">
-<h1>Meu Perfil <img src="https://i.imgur.com/jiPhrwp.png" alt="" width="50px"></h1>
-<h2>Nome: {{nome}}</h2>
-<h2>E-mail: {{usuario}}</h2>
-<h2>Celular:{{celular}}</h2>
-<h2>Tipo do Usuario: {{tipo}}</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Atualizar meu usuário :)</h1>
+        </div>
+    </div>
+    
+    <div class="row d-flex justify-content-center mr-5">
+        <div class="col-md-10">
+
+          <div class="form-group text-color">
+            <label [(ngModel)]="user.nome" for="nome">Nome</label>
+            <input  class="form-control" type="text" name="nome" id="nome"
+              placeholder="Seu nome">
+          </div>
+
+          <div class="form-group text-color">
+            <label [(ngModel)]="user.usuario" for="usuario">Usuário</label>
+            <input  class="form-control" type="text" name="usuario" id="usuario"
+              placeholder="Seu usuario">
+          </div>
+
+          <div class="form-group text-color">
+            <label [(ngModel)]="user.foto" for="foto">Link da foto</label>
+            <input class="form-control" type="text" name="foto" id="foto"
+              placeholder="Link da sua foto">
+          </div>
+
+          <div class="form-group text-color">
+            <label for="senha">Senha</label>
+            <input (input)="confirmaSenha($event)" class="form-control" type="password" name="senha" id="senha"
+              placeholder="Sua senha">
+          </div>
+
+          <div class="form-group text-color">
+            <label for="confirmSenha">Confirmar senha</label>
+            <input [(ngModel)]="user.senha" class="form-control" type="password" name="confirmSenha" id="confirmSenha"
+              placeholder="Confirme sua senha">
+          </div>
+
+          <div class="form-group text-color">
+            <label for="tipo">Tipo de usuário</label>
+            <select (change)="tipoUser($event)" class="form-control" name="tipo" id="tipo">
+              <option>Selecione um tipo de usuário</option>
+              <option value="normal">Normal</option>
+              <option value="adm">Administrador</option>
+            </select>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-danger mr-4" routerLink="/inicio">Cancelar</button>
+            <button (click)="atualizar()" type="submit" class="btn btn-success">Atualizar</button>
+          </div>
+
+        </div>
+      </div>
 </div>
 <div class="col-md-6 d-flex justify-content-center">
 <img src="https://i.imgur.com/jlPYxh4.gif" alt="">

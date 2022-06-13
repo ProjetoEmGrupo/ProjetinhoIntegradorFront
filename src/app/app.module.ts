@@ -17,6 +17,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,8 @@ import { UsuarioComponent } from './usuario/usuario.component';
      ParceirosComponent,
      CadastraCursoComponent,
      UsuarioComponent
+     
+     
   ],
   imports: [
     BrowserModule,
