@@ -70,4 +70,14 @@ body {
            margin-bottom: 30px;
        }
    }
+   .margem{
+ 
+    margin-top: 10%;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    position: relative;
+  }
    
