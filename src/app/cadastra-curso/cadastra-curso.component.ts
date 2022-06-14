@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
+import { Curso } from '../model/Curso';
+import { CursoService } from '../service/curso.service';
 
 @Component({
   selector: 'app-cadastra-curso',
@@ -7,9 +11,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastraCursoComponent implements OnInit {
 
-  constructor() { }
+  curso: Curso = new Curso()
+  listaCurso: Curso[]
+  constructor(
+    private router: Router,
+    private cursoService: CursoService
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    
+    if(environment.token == ''){
+      this.router.navigate(['/entrar'])
+    }
+
+    this.findAllCurso()
+  }
+  findAllCurso(){
+    this.cursoService.getAllCurso().subscribe((resp: Curso[])=>{
+      this.listaCurso = resp
+    })
+  }
+  cadastrar(){
+    this.cursoService.postCurso(this.curso).subscribe((resp: Curso)=>{
+      this.curso = resp
+      alert("Tema cadastrado com sucesso!")
+      this.findAllCurso()
+      this.curso = new Curso()
+    })
+  }
   }
 
-}
+
