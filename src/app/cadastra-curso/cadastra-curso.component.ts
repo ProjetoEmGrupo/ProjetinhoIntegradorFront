@@ -34,7 +34,7 @@ export class CadastraCursoComponent implements OnInit {
   cadastrar(){
     this.cursoService.postCurso(this.curso).subscribe((resp: Curso)=>{
       this.curso = resp
-      alert("Tema cadastrado com sucesso!")
+      alert("Curso cadastrado com sucesso!")
       this.findAllCurso()
       this.curso = new Curso()
     })

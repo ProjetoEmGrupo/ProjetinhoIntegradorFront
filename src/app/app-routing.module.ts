@@ -9,6 +9,7 @@ import { ParceirosComponent } from './parceiros/parceiros.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { CadastraCursoComponent } from './cadastra-curso/cadastra-curso.component';
 import { CursoEditComponent } from './curso-edit/curso-edit.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "entrar", pathMatch: "full" },
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:"parceiros", component:ParceirosComponent},
   {path:"usuario", component:UsuarioComponent},
   {path:"cadastra-curso", component:CadastraCursoComponent},
-  {path:"curso-edit",component:CursoEditComponent}
+  {path:"curso-edit",component:CursoEditComponent},
+  {path:"sobre-nos", component:SobreNosComponent}
 
 ];
 

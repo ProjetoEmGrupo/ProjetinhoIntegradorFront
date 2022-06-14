@@ -15,6 +15,7 @@ import { ParceirosComponent } from './parceiros/parceiros.component';
 import { CadastraCursoComponent } from './cadastra-curso/cadastra-curso.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { CursoEditComponent } from './curso-edit/curso-edit.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 
 
 
@@ -34,7 +35,8 @@ import { CursoEditComponent } from './curso-edit/curso-edit.component';
      ParceirosComponent,
      CadastraCursoComponent,
      UsuarioComponent,
-     CursoEditComponent
+     CursoEditComponent,
+     SobreNosComponent
      
      
   ],
