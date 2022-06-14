@@ -5,10 +5,12 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffd43d;
     font-size: 76px;
+    margin-left: 3rem;
 }
 a{
     text-decoration: none;
     color: #ffd43d;
+    
 }
 .a:hover{
     
@@ -17,6 +19,8 @@ a{
 h4{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:#fff;
+    margin-left: 3rem;
+    text-align: left;
 }
 body {
     font-family: 'Lato', sans-serif;
