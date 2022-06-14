@@ -20,6 +20,7 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
      CadastraCursoComponent,
      UsuarioComponent,
      CursoEditComponent,
-     SobreNosComponent
+     SobreNosComponent,
+   
      
      
   ],
