@@ -14,3 +14,12 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffd43d;
 }
+
+label{
+    color: gold;
+}
+
+button{
+    margin-top: 15px;
+}
+
