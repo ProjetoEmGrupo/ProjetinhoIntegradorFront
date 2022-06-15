@@ -19,5 +19,8 @@ export class CursosComponent implements OnInit {
       this.router.navigate(['/entrar'])
     }
   }
+  comprar(){
+    alert("Compra efetuada com sucesso")
+  }
 
 }
