@@ -27,6 +27,7 @@ export class UsuarioComponent implements OnInit {
       this.router.navigate(['/entrar'])
     }
   }
+ 
   atualizar() {
     this.user.tipo = this.tipoUsuario
     if (this.user.senha != this.confirmarSenha) {
@@ -62,7 +63,16 @@ findByUser(id: number){
   })
   
 }
-    }
-  
+mensagem(){
+  alert('Atualizado com sucesso!')
+}
+senha(){
+  this.user.tipo = this.tipoUsuario
+  if (this.user.senha != this.confirmarSenha) {
+  alert('A senhas estão incorretas.')
+  }else{
+    this.authService.editar(this.user).subscribe((resp: User) =>{
+      this.user = resp})}
 
-
+};
+}

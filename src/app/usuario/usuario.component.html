@@ -10,11 +10,6 @@
     <div class="row d-flex justify-content-center mr-5">
         <div class="col-md-10">
 
-          <div class="form-group text-color">
-            <label [(ngModel)]="user.nome" for="nome">Nome</label>
-            <input  class="form-control" type="text" name="nome" id="nome"
-              placeholder="Seu nome">
-          </div>
 
           <div class="form-group text-color">
             <label [(ngModel)]="user.usuario" for="usuario">Usuário</label>
@@ -42,7 +37,7 @@
 
           <div class="form-group text-color">
             <label for="tipo">Tipo de usuário</label>
-            <select (change)="tipoUser($event)" class="form-control" name="tipo" id="tipo">
+            <select (change)="tipoUser($event)" (click)="senha()" class="form-control" name="tipo" id="tipo">
               <option>Selecione um tipo de usuário</option>
               <option value="normal">Normal</option>
               <option value="adm">Administrador</option>
@@ -51,7 +46,7 @@
 
           <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-danger mr-4" routerLink="/inicio">Cancelar</button>
-            <button (click)="atualizar()" type="submit" class="btn btn-success">Atualizar</button>
+            <button (click)="mensagem()"  type="submit" class="btn btn-success">Atualizar</button>
           </div>
 
         </div>
