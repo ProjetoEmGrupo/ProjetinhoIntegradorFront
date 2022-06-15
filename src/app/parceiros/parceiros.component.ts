@@ -18,4 +18,7 @@ export class ParceirosComponent implements OnInit {
     }
   }
 
+  mensagem(){
+    alert('Seu cadastro foi bem sucedido! Um de nossos administradores, irá entrar em contato')
+  }
 }

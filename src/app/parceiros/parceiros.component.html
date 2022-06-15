@@ -8,9 +8,10 @@
         <h4>Aqui são empresas que tambám fazem parte do nosso time,
           que nos apoiam, e vem movendo para que juntos conseguimos fazer a diferença! <br><br>
           Venha fazer parte dessa familia também. Clique aqui para se tornar um
-          <a class="" data-toggle="modal" data-target="" href="">Parceiros
-
-          </a>
+         
+            <button type="button" class="btn btm3" data-bs-toggle="modal" 
+            data-bs-target="#exampleModal1">Parceiros</button>
+         
         </h4>
 
 
@@ -71,5 +72,48 @@
 
       </div>
 
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Seja nosso Parceiro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="nome">Nome da empresa</label>
+            <input class="form-control" type="text" name="nome" id="nome"
+              placeholder="Nome da empresa">
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="form-group ">
+            <label for="nome">E-mail</label>
+            <input class="form-control" type="email" name="email" id="email"
+              placeholder="E-mail">
+        </div>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="nome">Celular</label>
+              <input class="form-control" type="text" name="celular" id="celular"
+                placeholder="Celular">
+          </div>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="nome">Curso de interesse:</label>
+              <input class="form-control" type="text" name="curso" id="curso"
+                placeholder="Curso">
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btm " data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btm2" (click)="mensagem()">Inscreva-se</button>
+        </div>
+      </div>
     </div>
   </div>

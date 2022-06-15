@@ -1,6 +1,19 @@
 ::ng-deep body{
     background-color: #2b475e;
 }
+.btm3{
+    color: white;
+    background-color: #ffd43d;
+}
+.btm {
+    color: white;
+    background-color: #e92626;
+}
+
+.btm2 {
+    color: white;
+    background-color: #26e930;
+}
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffd43d;
